@@ -20,11 +20,15 @@
 
 <body>
 
-<div class='d-flex'>
-    <div>
-    <?php include 'pages/menu/left_menu.php';?>
-</div>
-    <div><?php include 'pages/main.php';?></div>
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-2.5 alert-primary">  <?php include 'pages/menu/left_menu.php';?></div>
+    <div class="col">
+    <?php include 'pages/loading.php'?>
+    </div>
+    <div class="col-3"></div>
+
+    </div>
 </div>
 
     <!-- Optional JavaScript -->
