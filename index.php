@@ -53,6 +53,17 @@
 
 
 
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-2.5 alert-primary">  <?php include 'pages/menu/left_menu.php';?></div>
+    <div class="col">
+    <?php include 'pages/loading.php'?>
+    </div>
+    <div class="col-3"></div>
+
+    </div>
+</div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

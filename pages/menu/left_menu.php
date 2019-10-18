@@ -1,7 +1,5 @@
 <style>
  .left_side_menu{
-    
-    width: 230px;
     height: 100vh;
     }
 .left_side_menu ul {
@@ -51,16 +49,16 @@
 
 }
 .left_side_menu .footerone:hover{
-    color:white;
+    color:blue;
 }
 
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="left_side_menu alert-secondary nav nav-pills flex-column">
+<div class="left_side_menu alert-primary">
     
     <ul>
-        <li><div class="bar"></div><div class="menu_item">Home</div></li>
+        <li><div class="bar"></div><div class="menu_item">Home </div></li>
         <li><div class="bar"></div><div class="menu_item">Features</div></li>
         <li><div class="bar"></div><div class="menu_item">How It Works</div></li>
         <li><div class="bar"></div><div class="menu_item">Community</div></li>
