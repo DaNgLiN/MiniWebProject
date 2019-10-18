@@ -1,12 +1,9 @@
 <link rel="stylesheet" href="css/loader_wall.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
-<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
 <style>
 #container {
     width: 1000px;
@@ -64,11 +61,24 @@
 
     }
 }
+
+.main_body_footer div div div p span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.main_body_support h1, .main_body_support p{
+    font-family:'Roboto Slab', serif;
+}
+.main_body_support .card-body a {
+    font-style: italic;
+    
+}
 </style>
 
 <div class="container-fluid bg-danger position-absolute" id="_loader_wall"
     style="width:100vw;height:100vh;z-index:1000">
-    <div class="d-flex flex-column h-100 w-100 justify-content-center align-items-center">
+    <div class="d-flex flex-column h-100 w-100 justify-content-center align-items-center ">
         <div>
 
             <div class="cssload-box-loading">
@@ -142,68 +152,245 @@
             </div>
 
 
-            <div class="home w-100 h-100" id="item-2">
-                <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-                    <div>
-                        <h3>1</h3>
+            <div class="home bg-danger w-100 h-100" id="item-2">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner text-light">
+                        <div class="carousel-item  active " style="height:500px;">
+                            <div class="d-flex justify-content-center p-5">
+
+                                <div class="card bg-dark m-1 " style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+
+                                <div class="card bg-dark m-1 " style="width: 18rem;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+
+                                <div class="card bg-dark m-1" style="width: 18rem;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="height:500px;">
+                            <div class="d-flex justify-content-center p-5">
+
+                                <div class="card bg-dark m-1 " style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+
+                                <div class="card bg-dark m-1 " style="width: 18rem;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+
+                                <div class="card bg-dark m-1" style="width: 18rem;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="height:500px;">
+                            <div class="d-flex justify-content-center p-5">
+
+                                <div class="card bg-dark m-1 " style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+
+                                <div class="card bg-dark m-1 " style="width: 18rem;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+
+                                <div class="card bg-dark m-1" style="width: 18rem;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3>2</h3>
-                    </div>
-                    <div>
-                        <h3>3</h3>
-                    </div>
-                    <div>
-                        <h3>4</h3>
-                    </div>
-                    <div>
-                        <h3>5</h3>
-                    </div>
-                    <div>
-                        <h3>6</h3>
-                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
 
-            <div class="home w-100 h-100 bg-dark text-light" id="item-3">
+            <div class="home w-100  bg-warning text-dark text-center main_body_support" id="item-3">
+                        <div class="container pt-5">
+                        <h1>Want to Improve Your Results?
+                    </h1>
+                    <p>Here are a few steps you can take:</p>
+                        </div>
+                <div class="d-flex flex-row justify-content-around align-items-around h-100 w-100 flex-wrap p-5">
+               
+                    <div class="card m-1 " style="width: 15rem;">
+
+                        <div class="card-body text-center d-flex align-items-between flex-column justify-content-around">
+                            <i class="fas fa-tachometer-alt fa-3x p-1"></i>
+                            <h5 class="card-title">Improve Speeds</h5>
+                            <p class="card-text">Explore steps you can take to improve your Internet speed.</p>
+                            <a href="#" class="btn btn-primary">Get Tips</a>
+                        </div>
+                    </div>
+
+                    <div class="card m-1" style="width: 15rem;">
+
+                        <div class="card-body text-center d-flex align-items-between flex-column justify-content-around">
+                            <i class="fas fa-trash fa-3x p-1"></i>
+                            <h5 class="card-title">Disk Clean</h5>
+                            <p class="card-text">Free up unnecessary spaces. Delete temporary files, unused programs.
+                            </p>
+                            <a href="#" class="btn btn-primary">Clean up</a>
+                        </div>
+                    </div>
+
+                    <div class="card m-1" style="width: 15rem;">
+
+                        <div class="card-body text-center d-flex align-items-between flex-column justify-content-around ">
+                            <i class="fas fa-recycle fa-3x p-1"></i>
+                            <h5 class="card-title">Troubleshoot</h5>
+                            <p class="card-text">See if there are any outages and restart your system to become problem
+                                free.</p>
+                            <a href="#" class="btn btn-primary">Check Outages</a>
+                        </div>
+                    </div>
+
+                    <div class="card m-1" style="width: 15rem;">
+
+                        <div class="card-body text-center d-flex align-items-between flex-column justify-content-around">
+                            <i class="fab fa-hire-a-helper fa-3x p-1"></i>
+                            <h5 class="card-title">Help Online</h5>
+                            <p class="card-text">We are 24 hours online. <br> 
+                                Toll-free : xx-xxxxxxxxxx <br>
+                                <p>scan_me@scme.com</p>
+                            </p>
+                            <a href="#" class="btn btn-primary">Call-us</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="home main_body_footer w-100 h-100 bg-dark text-light" id="item-4">
                 <div class="d-flex flex-column align-items-center justify-content-around h-100">
                     <div class="d-flex justify-content-around w-100">
                         <div>
-                            <h5>SPEED TEST</h5>
-                            <P>Advertise <br>
-                                Ookla 5G Map <br>
-                                Speedtest Awards <br>
-                                Speedtest Global Index <br>
-                                Speedtest Insights <br>
-                                Speedtest Servers</P>
+                            <h5>System(Hardware)</h5>
+                            <P>
+                                <span>Manufacture</span> <br>
+                                <span>Model </span> <br>
+                                <span>Version </span> <br>
+                                <span>Type</span> <br>
+                                <span>Serial No </span> <br>
+
                         </div>
                         <div>
-                            <h5>SPEED TEST</h5>
-                            <P>Advertise <br>
-                                Ookla 5G Map <br>
-                                Speedtest Awards <br>
-                                Speedtest Global Index <br>
-                                Speedtest Insights <br>
-                                Speedtest Servers</P>
+                            <h5>Memory</h5>
+                            <P><span>Total</span> <br>
+                                <span>Available</span> <br>
+                                <span> Free </span><br>
+                                <span> Manufacture </span><br>
+                                <span> Clock Speed </span><br>
+                                <span> Size</span> <br>
+                                <span> Voltage Configured</span> </p>
+
                         </div>
                         <div>
-                            <h5>SPEED TEST</h5>
-                            <P>Advertise <br>
-                                Ookla 5G Map <br>
-                                Speedtest Awards <br>
-                                Speedtest Global Index <br>
-                                Speedtest Insights <br>
-                                Speedtest Servers</P>
+                            <h5>Networks </h5>
+                            <P><span>Protocal </span><br>
+                                <span> Local Address</span><br>
+                                <span> Local Port</span> <br>
+                                <span> Peer Address </span><br>
+                                <span> Peer Port</span> <br>
+                                <span> State </span><br>
+                                <span> Process ID(PID)</span></p>
                         </div>
+                        <div>
+                            <h5>Operating System</h5>
+                            <P><span>Platform </span><br>
+                                <span> Kernel </span><br>
+                                <span> Distribution </span><br>
+                                <span> Architecture</span> <br>
+                                <span> Build</span> <br>
+                                <span> Serial </span><br>
+                                <span> Service Pack </span><br>
+                                <span> Virtual Box</span></P>
+                        </div>
+
                         <div>
                             <h5>APPS</h5>
-                            <P>Android <br>
-                                Apple TV <br>
-                                Google Chrome <br>
-                                iOS <br>
-                                macOS <br>
-                                Windows</P>
+                            <P><span>Android </span><br>
+                                <span> Apple TV </span><br>
+                                <span> Google Chrome</span> <br>
+                                <span> iOS </span><br>
+                                <span> macOS </span><br>
+                                <span> Windows</span></P>
                         </div>
+
                     </div>
                     <div class=" text-center">
                         <p>Ookla®, Speedtest®, and Speedtest Intelligence® are among some of the federally registered

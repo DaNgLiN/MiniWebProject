@@ -1,5 +1,19 @@
 document.getElementById("_loader_wall").style.display = "none";
 
+
+$(document).ready(function () {
+    $('.multiple-itemss').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        speed: 300,
+        arrows:true,
+    });
+});
+
+
+
 function loaderWall() {
     document.getElementById("_loader_wall").style.display = "block";
     setTimeout(function () {
@@ -39,12 +53,3 @@ anime.timeline({ loop: true })
     });
 
 
-    
-$(document).ready(function () {
-    $('.main_body_slick').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    });
-});

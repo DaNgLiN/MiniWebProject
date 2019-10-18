@@ -59,10 +59,12 @@ font-family: 'Ubuntu', sans-serif;
             <nav class="nav nav-pills flex-column">
                 <a class="nav-link themetextcolor themetextfont" href="#item-1"><i class="fas fa-home fa-2x"></i><button
                         class="btn btn-link  themetextcolor themetextfont float-right font-weight-bold sidemenuleftright">Home</button></a>
-                <a class="nav-link themetextcolor themetextfont" href="#item-2"><i class="fas fa-home fa-2x"></i><button
+                <a class="nav-link themetextcolor themetextfont" href="#item-2"><i class="fab fa-buffer fa-2x"></i><button
                         class="btn btn-link themetextcolor float-right font-weight-bold themetextfont sidemenuleftright">Features</button></a>
-                <a class="nav-link themetextcolor themetextfont" href="#item-3"><i
-                        class="fas fa-fire fa-2x"></i></i><button
+                <a class="nav-link themetextcolor themetextfont" href="#item-3"><i class="fas fa-hands-helping fa-2x"></i><button
+                        class="btn btn-link themetextcolor float-right font-weight-bold themetextfont sidemenuleftright">Support</button></a>
+                <a class="nav-link themetextcolor themetextfont" href="#item-4"><i
+                        class="fas fa-fire fa-2x"></i><button
                         class="btn btn-link themetextcolor float-right font-weight-bold themetextfont sidemenuleftright">Comunity</button></a>
 
             </nav>
