@@ -1,112 +1,98 @@
 <style>
-@font-face {
-    font-family: Potra;
-    src: url(font/Potra.otf);
-}
-
-@font-face {
-    font-family: Milea;
-    src: url(font/Milea.ttf);
-}
-
-ul {
-    list-style: none;
-}
-
-.side-menu-setting-btn {
-    transform: rotate(0deg);
-}
-
-.side-menu-setting-btn:hover {
-    transform: rotate(30deg);
-    transition: 0.1s;
-    transition-timing-function: ease-out;
-}
-
-.side-menu-left-right-btn:hover {
-    transform: translateX(3px);
-    transition: 0.1s;
-}
-
-.sidemenuleftright {
-    transition: 0.3s;
-}
-
-#_sidemenubar {
-    transition: 0.3s;
+.side_menu {
     width: 15vw;
-    transition-timing-function: ease-out;
+}
+
+.nav-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sideMenuRight {
+    display: none;
+}
+
+.side_menu_social_icons_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.side_menu_social_icons_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#side_menu_developers {
+    height: 48px;
+    overflow: hidden;
+    line-height: 1.3;
+}
+
+.navbaritems .nav-link div:hover {
+    text-decoration: underline;
+    transition: 0.1s;
 }
 </style>
-<!-- fontawesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-<!-- googlefont -->
-<!-- 
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif;
-font-family: 'Open Sans Condensed', sans-serif;
-font-family: 'Ubuntu', sans-serif;
--->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto|Roboto+Slab|Ubuntu&display=swap"
-    rel="stylesheet">
 
-<div class="d-flex container  justify-content-between h-100 flex-column p-1 m-0" style="" id="_sidemenubar">
-    <div class="themetextcolor w-100  d-none border rounded">
-        <span class="text-center w-100" style="font-family:Potra;font-size:30px;">Scan Me</span>
-    </div>
-    <ul>
-        <nav id="navbar-example3" class="navbar ">
-            <nav class="nav nav-pills flex-column">
-                <a class="nav-link themetextcolor themetextfont" href="#item-1"><i class="fas fa-home fa-2x"></i><button
-                        class="btn btn-link  themetextcolor themetextfont float-right font-weight-bold sidemenuleftright">Home</button></a>
-                <a class="nav-link themetextcolor themetextfont" href="#item-2"><i class="fab fa-buffer fa-2x"></i><button
-                        class="btn btn-link themetextcolor float-right font-weight-bold themetextfont sidemenuleftright">Features</button></a>
-                <a class="nav-link themetextcolor themetextfont" href="#item-3"><i class="fas fa-hands-helping fa-2x"></i><button
-                        class="btn btn-link themetextcolor float-right font-weight-bold themetextfont sidemenuleftright">Support</button></a>
-                <a class="nav-link themetextcolor themetextfont" href="#item-4"><i
-                        class="fas fa-fire fa-2x"></i><button
-                        class="btn btn-link themetextcolor float-right font-weight-bold themetextfont sidemenuleftright">Comunity</button></a>
-
+<div class="side_menu_item h-100 w-100" style="position:relative">
+    <div class="w-100" style="position:absolute;top:100px;">
+        <nav id="navbar-example3" class="navbar navbaritems w-100 p-0 font-weight-bold">
+            <nav class="nav nav-pills flex-column w-100">
+                <a class="nav-link" href="#item-1"><i class="fas fa-home fa-2x"></i>
+                    <div>Home</div>
+                </a>
+                <a class="nav-link" href="#item-2"><i class="fab fa-buffer fa-2x"></i>
+                    <div>Features</div>
+                </a>
+                <a class="nav-link" href="#item-3"><i class="fas fa-hands-helping fa-2x"></i>
+                    <div>Support</div>
+                </a>
+                <a class="nav-link" href="#item-4"><i class="fas fa-fire fa-2x"></i>
+                    <div>Community</div>
+                </a>
             </nav>
         </nav>
-    </ul>
-    <div class="d-flex flex-column" style="font-size:12px">
-        <div class="d-flex justify-content-between pl-2 pr-2">
-            <button type="button"
-                class="side-menu-setting-btn p-0 m-0 btn btn-link align-self-end themetextcolor themetextfont "
-                data-toggle="modal" data-target="#side_menu_settings">
+    </div>
+
+    <div class="text-light" style="position:absolute;width:100%;bottom:20px">
+        <div class="d-flex w-100 justify-content-between">
+
+            <button type="button" class="p-0 m-0 btn btn-link" data-toggle="modal" data-target="#side_menu_settings">
                 <i class="fas fa-cog fa-2x" style="font-size:30px"></i>
             </button>
-            <button type="button"
-                class="side-menu-left-right-btn p-0 m-0 btn btn-link align-self-end themetextcolor themetextfont sidemenuLeftbtn"
-                onclick="funcSideMenuLeftBtn()">
-                <i class="fas fa-chevron-circle-left " style="font-size:20px"></i>
-            </button>
-            <button type="button"
-                class="side-menu-left-right-btn p-0 m-0 btn btn-link align-self-end themetextcolor themetextfont sidemenuRightbtn"
-                onclick="funcSideMenuRightBtn()">
-                <i class="fas fa-chevron-circle-right " style="font-size:20px"></i>
-            </button>
+            <button id="sideMenuLeft" type="button" class="btn btn-link" onclick="sideMenuMouseOver()">
+                <i class="fas fa-chevron-circle-left " style="font-size:20px"></i> </button>
+            <button id="sideMenuRight" class="btn btn-link " type="button" onclick="sideMenuMouseOut()">
+                <i class="fas fa-chevron-circle-right " style="font-size:20px"></i></button>
+
         </div>
-        <div class="themetextcolor themetextfont pt-2" style="font-size:12px">
-            <span style="font-size:12px;">Follow us:</span>
-            <div class="d-flex justify-content-around pb-0 pt-2" style="font-size:12px">
-                <i class="fab fa-facebook-f" style="font-size:16px"></i>
-                <i class="fab fa-github" style="font-size:16px"></i>
-                <i class="fab fa-instagram" style="font-size:16px"></i>
+        <div class="d-flex flex-column">
+            <div class="d-flex flex-column">
+                <div>Follow :</div>
+                <div id="side_menu_social_icons" class="w-100 h-100">
+                    <i class="fab fa-facebook-f p-1" style="font-size:16px"></i>
+                    <i class="fab fa-github p-1" style="font-size:16px"></i>
+                    <i class="fab fa-instagram p-1" style="font-size:16px"></i>
+                </div>
             </div>
-            <div class="sidemenuleftright" style="transition:0.0s;">
-                <span style="font-size:12px">&copy Copyright, 2019</span><br>
-                <span style="font-size:12px">Developers :</span>
-                <span style="font-size:12px">NepsGeek's</span>
+            <div id="side_menu_developers">
+                <div id="side_menu_developers" class="d-flex flex-column  align-items-center font-weight-normal">
+                    <span style="font-size:12px">&copy Copyright, 2019</span>
+                    <span style="font-size:12px">Developers :</span>
+                    <span style="font-size:12px">NepsGeek's, Nepal</span>
+                </div>
             </div>
-            <p></p>
-
-
         </div>
     </div>
 
+
 </div>
+
 
 <!-- Modal -->
 <div class="modal fade" id="side_menu_settings" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"

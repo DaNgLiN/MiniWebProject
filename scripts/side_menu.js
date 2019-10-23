@@ -1,114 +1,46 @@
-var sidemenufontsize = 16
+var side_menu_social_icons = document.getElementById("side_menu_social_icons")
+side_menu_social_icons.classList.add("side_menu_social_icons_row");
 
-// default-theme
-document.getElementById("_sidemenubar").style.background = "#333"
-themetextcolor = document.getElementsByClassName("themetextcolor"); //side-menu-color
-themetextfont = document.getElementsByClassName("themetextfont"); //side-menu-font-name
-for (i = 0; i < themetextcolor.length; i++) {
-    themetextcolor[i].style.color = "white";
-}
-for (i = 0; i < themetextfont.length; i++) {
-    themetextfont[i].style.fontFamily = "'Roboto', sans-serif";
-    themetextfont[i].style.fontSize = sidemenufontsize + 'px';
-}
+function sideMenuMouseOver() {
+    var side_menu_social_icons = document.getElementById("side_menu_social_icons")
+    side_menu_social_icons.classList.remove("side_menu_social_icons_row");
+    side_menu_social_icons.classList.add("side_menu_social_icons_col");
 
-// theme
-function funcsidemenutheme(themeValue) {
-    if (themeValue == 'dark') {
-        document.getElementById("_sidemenubar").style.background = "#333"
-        themetextcolor = document.getElementsByClassName("themetextcolor");
-        for (i = 0; i < themetextcolor.length; i++) {
-            themetextcolor[i].style.color = "white";
-        }
-    }
-    else if (themeValue == 'light') {
-        document.getElementById("_sidemenubar").style.background = "#ddd"
-        themetextcolor = document.getElementsByClassName("themetextcolor");
-        for (i = 0; i < themetextcolor.length; i++) {
-            themetextcolor[i].style.color = "black";
-        }
-
-
-    }
-
-}
-
-// side-menu-position
-document.getElementById("_sidemenu").style.float = "left";
-
-function funtionSideMenuPosition(params) {
-    if (params == 'left')
-        document.getElementById("_sidemenu").style.float = "left";
-    else if (params == 'right')
-        document.getElementById("_sidemenu").style.float = "right";
-    console.log(params)
-}
-
-// side-menu-font-name
-function funcSideMenuFontName(params) {
-    if (params == 'font1') {
-        themetextfont = document.getElementsByClassName("themetextcolor");
-        for (i = 0; i < themetextfont.length; i++) {
-            themetextfont[i].style.fontFamily = "'Roboto', sans-serif";
-        }
-    }
-    else if (params == 'font2') {
-        themetextfont = document.getElementsByClassName("themetextcolor");
-        for (i = 0; i < themetextfont.length; i++) {
-            themetextfont[i].style.fontFamily = "'Roboto Slab', serif";
-        }
-    }
-    else if (params == 'font3') {
-        themetextfont = document.getElementsByClassName("themetextcolor");
-        for (i = 0; i < themetextfont.length; i++) {
-            themetextfont[i].style.fontFamily = "'Open Sans Condensed', sans-serif";
-        }
-    }
-    else if (params == 'font4') {
-        themetextfont = document.getElementsByClassName("themetextcolor");
-        for (i = 0; i < themetextfont.length; i++) {
-            themetextfont[i].style.fontFamily = "'Ubuntu', sans-serif";
-        }
+    document.getElementById("side_menu_developers").style.display = "none";
+    setTimeout(function() {
+        document.getElementById("side_menu_developers").style.transition = "0.5s";
+        document.getElementById("side_menu_developers").style.opacity = 0;
+    }, 100)
+    document.getElementById("sideMenuLeft").style.display = "none";
+    document.getElementById("sideMenuRight").style.display = "block";
+    document.getElementsByClassName("side_menu")[0].style.width = "5.5vw";
+    document.getElementsByClassName("side_menu")[0].style.transition = "0.3s";
+    var x = document.querySelectorAll(".navbaritems .nav-link div");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.transition = "0.1s";
+        x[i].style.opacity = 0;
     }
 }
 
-// side-menu-font-size
+function sideMenuMouseOut() {
+    var side_menu_social_icons = document.getElementById("side_menu_social_icons")
+    side_menu_social_icons.classList.remove("side_menu_social_icons_col");
+    side_menu_social_icons.classList.add("side_menu_social_icons_row");
 
-function funcSideMenuFontSize(params) {
-    if (params == 'sub' && sidemenufontsize >= 12) {
-        sidemenufontsize = sidemenufontsize - 2
-    }
-    else if ('add' && sidemenufontsize <= 20) {
-        sidemenufontsize = sidemenufontsize + 2
-    }
-    themetextfont = document.getElementsByClassName("themetextcolor");
-    for (i = 0; i < themetextfont.length; i++) {
-        themetextfont[i].style.fontSize = sidemenufontsize + 'px';
-    }
-}
 
-// side-menu-left-right
-document.querySelector(".sidemenuRightbtn").style.display = "none";
-document.querySelector(".sidemenuLeftbtn").style.display = "block";
-function funcSideMenuLeftBtn() {
-    var sidemenuleftright = document.getElementsByClassName("sidemenuleftright")
-
-    for (i = 0; i < sidemenuleftright.length; i++) {
-        sidemenuleftright[i].style.display = "none";
+    document.getElementById("side_menu_developers").style.display = "block";
+    setTimeout(function() {
+        document.getElementById("side_menu_developers").style.transition = "1s";
+        document.getElementById("side_menu_developers").style.opacity = 1;
+    }, 100)
+    document.getElementById("sideMenuLeft").style.display = "block";
+    document.getElementById("sideMenuRight").style.display = "none";
+    document.getElementsByClassName("side_menu")[0].style.width = "15vw";
+    document.getElementsByClassName("side_menu")[0].style.transition = "0.3s";
+    var x = document.querySelectorAll(".navbaritems .nav-link div");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.transition = "0.3s";
+        x[i].style.opacity = 1;
     }
 
-    document.querySelector(".sidemenuRightbtn").style.display = "block";
-    document.querySelector(".sidemenuLeftbtn").style.display = "none";
-    document.getElementById("_sidemenubar").style.width = "7vw"
-}
-function funcSideMenuRightBtn() {
-    var sidemenuleftright = document.getElementsByClassName("sidemenuleftright")
-    setTimeout(function () {
-        for (i = 0; i < sidemenuleftright.length; i++) {
-            sidemenuleftright[i].style.display = "block";
-        }
-    }, 250)
-    document.querySelector(".sidemenuLeftbtn").style.display = "block";
-    document.querySelector(".sidemenuRightbtn").style.display = "none";
-    document.getElementById("_sidemenubar").style.width = "15vw"
 }

@@ -1,6 +1,5 @@
 document.getElementById("_loader_wall").style.display = "none";
 
-
 $(document).ready(function () {
     $('.multiple-itemss').slick({
         infinite: true,
