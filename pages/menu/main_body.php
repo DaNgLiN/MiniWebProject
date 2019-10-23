@@ -1,7 +1,8 @@
-<link rel="stylesheet" href="css/loader_wall.css">
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 <style>
@@ -67,41 +68,20 @@
     text-decoration: underline;
 }
 
-.main_body_support h1, .main_body_support p{
-    font-family:'Roboto Slab', serif;
+.main_body_support h1,
+.main_body_support p {
+    font-family: 'Roboto Slab', serif;
 }
+
 .main_body_support .card-body a {
     font-style: italic;
-    
+
 }
 </style>
-
-<div class="container-fluid bg-danger position-absolute" id="_loader_wall"
-    style="width:100vw;height:100vh;z-index:1000">
-    <div class="d-flex flex-column h-100 w-100 justify-content-center align-items-center ">
-        <div>
-
-            <div class="cssload-box-loading">
-
-            </div>
-        </div>
-        <div class="pt-4">
-            <h1 class="ml1">
-                <span class="text-wrapper">
-                    <span class="letters">Loading . . .</span>
-                    <span class="line line2"></span>
-                </span>
-            </h1>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="container-fluid overflow-auto w-100 h-100 bg-danger p-0 m-0 ">
+<div class="container-fluid text-light overflow-auto w-100 h-100 bg-danger p-0 m-0 ">
 
     <div class="w-100 bg-info">
-        <div class="bg-info p-0 m-0 h-10" data-spy="scroll" style="height:100vh;overflow-y:scroll"
+        <div class="bg-info p-0 m-0 h-10 " data-spy="scroll" style="height:100vh;overflow-y:scroll"
             data-target="#navbar-example3" data-offset="100">
 
             <div class="home w-100 h-100 bg-dark" id="item-1" style="position:relative">
@@ -153,6 +133,12 @@
 
 
             <div class="home bg-danger w-100 h-100" id="item-2">
+                <div class="alert text-center">
+                    <h1>Monitoring Work Processes</h1>
+                    <h3>One tool – total visibility over your System</h3>
+                    <p>Displays all running status, Real-time views, interactive charts, reports <br>See what it can do for you…</p>
+                </div>
+
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -161,69 +147,35 @@
                     </ol>
                     <div class="carousel-inner text-light">
                         <div class="carousel-item  active " style="height:500px;">
-                            <div class="d-flex justify-content-center p-5">
+                            <div class="d-flex justify-content-center">
+                                <div class="card bg-dark m-1 pt-4 pb-2 " style="width: 18rem;">
+                                    <div class="card-body ">
 
-                                <div class="card bg-dark m-1 " style="width: 18rem;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title text-center"> <i class="fa fa-server fa-3x pb-2"></i> <p>System Information</p>
+                                        </h5>
+                                        <p class="card-tex mt-5"style=" text-align: justify;">&nbsp;&nbsp; &nbsp; &nbsp; A computer system is a set of integrated devices that input, output, process, and store data and information.
+                                        </p>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
                                     </div>
                                 </div>
 
-                                <div class="card bg-dark m-1 " style="width: 18rem;">
+                                <div class="card bg-dark m-1 pt-4 pb-2 " style="width: 18rem;">
 
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title text-center"> <i class="fa fa-microchip fa-3x pb-2"></i> <p>CPU</p></h5>
+                                        <p class="card-text  mt-5" style=" text-align: justify;"> &nbsp;&nbsp; &nbsp; &nbsp;A central processor or main processor, is the electronic
+                                            circuitry within a computer that carries out the instructions</p>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
                                     </div>
                                 </div>
 
-                                <div class="card bg-dark m-1" style="width: 18rem;">
+                                <div class="card bg-dark m-1 pt-4 pb-2" style="width: 18rem;">
 
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="height:500px;">
-                            <div class="d-flex justify-content-center p-5">
-
-                                <div class="card bg-dark m-1 " style="width: 18rem;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-
-                                <div class="card bg-dark m-1 " style="width: 18rem;">
-
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-
-                                <div class="card bg-dark m-1" style="width: 18rem;">
-
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title text-center"> <i class="fas fa-memory fa-3x pb-2"></i> <p>Memory</p></h5>
+                                        <p class="card-text  mt-5 " style=" text-align: justify;">&nbsp;&nbsp; &nbsp; &nbsp;It refers to a device that is used to store information for
+                                            immediate use in a computer hardware device.</p>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
                                     </div>
                                 </div>
 
@@ -233,32 +185,66 @@
                         <div class="carousel-item" style="height:500px;">
                             <div class="d-flex justify-content-center p-5">
 
-                                <div class="card bg-dark m-1 " style="width: 18rem;">
+                                <div class="card bg-dark m-1 pt-4 pb-2 " style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title text-center"> <i class="fas fa-laptop fa-3x pb-2"></i> <p>Operating System</p></h5>
+                                        <p class="card-text  mt-5 " style=" text-align: justify;"> &nbsp;&nbsp; &nbsp; &nbsp;An OS is system software that manages computer hardware,
+                                            software resources, and provides common services.</p>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
                                     </div>
                                 </div>
 
-                                <div class="card bg-dark m-1 " style="width: 18rem;">
+                                <div class="card bg-dark m-1  pt-4 pb-2" style="width: 18rem;">
 
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title text-center"> <i class="fa fa-desktop fa-3x pb-2"></i> <p>Graphics</p></h5>
+                                        <p class="card-text  mt-5" style=" text-align: justify;"> &nbsp;&nbsp; &nbsp; &nbsp;Graphics are pictures and films created using computers. it
+                                            refers to computer-generated image data .</p>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
                                     </div>
                                 </div>
 
-                                <div class="card bg-dark m-1" style="width: 18rem;">
+                                <div class="card bg-dark m-1 pt-4 pb-2" style="width: 18rem;">
 
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title text-center"> <i class="fas fa-network-wired fa-3x pb-2"></i> <p>Network</p></h5>
+                                        <p class="card-text mt-5 " style=" text-align: justify;"> &nbsp;&nbsp; &nbsp; &nbsp;The Network Computer was a diskless desktop computer device
+                                            made by Oracle Corporation from about 1996 to 2000..</p>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="height:500px;">
+                            <div class="d-flex justify-content-center p-5">
+
+                                <div class="card bg-dark m-1 pt-4 pb-2 " style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"> <i class="fa fa-wifi fa-3x pb-2"></i> <p>WIFI</p></h5>
+                                        <p class="card-text mt-5 " style=" text-align: justify;"> &nbsp;&nbsp; &nbsp; &nbsp;Wi-Fi in Computer system uses radio waves to provide
+                                            wireless high-speed Internet and network connections</p>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
+                                    </div>
+                                </div>
+
+                                <div class="card bg-dark m-1  pt-4 pb-2" style="width: 18rem;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"> <i class="fa fa-battery-half fa-3x pb-2"></i> <p>Battery</p></h5>
+                                        <p class="card-text mt-5" style=" text-align: justify;"> &nbsp;&nbsp; &nbsp; &nbsp;A battery is a hardware component that supplies power to a
+                                            device, enabling that device to work without a power cord.</p>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
+                                    </div>
+                                </div>
+
+                                <div class="card bg-dark m-1 pt-4 pb-2" style="width: 18rem;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"> <i class="fa fa-cube fa-3x pb-2"></i> <p>Virtual Box</p></h5>
+                                        <p class="card-text mt-5" style=" text-align: justify;"> &nbsp;&nbsp; &nbsp; &nbsp;Oracle VM VirtualBox  (VB) is a free and VB open-source hosted hypervisor for x86 virtualization, developed by Oracle Corporation.</p>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
                                     </div>
                                 </div>
 
@@ -278,16 +264,17 @@
             </div>
 
             <div class="home w-100  bg-warning text-dark text-center main_body_support" id="item-3">
-                        <div class="container pt-5">
-                        <h1>Want to Improve Your Results?
+                <div class="container pt-5">
+                    <h1>Want to Improve Your Results?
                     </h1>
                     <p>Here are a few steps you can take:</p>
-                        </div>
+                </div>
                 <div class="d-flex flex-row justify-content-around align-items-around h-100 w-100 flex-wrap p-5">
-               
+
                     <div class="card m-1 " style="width: 15rem;">
 
-                        <div class="card-body text-center d-flex align-items-between flex-column justify-content-around">
+                        <div
+                            class="card-body text-center d-flex align-items-between flex-column justify-content-around">
                             <i class="fas fa-tachometer-alt fa-3x p-1"></i>
                             <h5 class="card-title">Improve Speeds</h5>
                             <p class="card-text">Explore steps you can take to improve your Internet speed.</p>
@@ -297,7 +284,8 @@
 
                     <div class="card m-1" style="width: 15rem;">
 
-                        <div class="card-body text-center d-flex align-items-between flex-column justify-content-around">
+                        <div
+                            class="card-body text-center d-flex align-items-between flex-column justify-content-around">
                             <i class="fas fa-trash fa-3x p-1"></i>
                             <h5 class="card-title">Disk Clean</h5>
                             <p class="card-text">Free up unnecessary spaces. Delete temporary files, unused programs.
@@ -308,7 +296,8 @@
 
                     <div class="card m-1" style="width: 15rem;">
 
-                        <div class="card-body text-center d-flex align-items-between flex-column justify-content-around ">
+                        <div
+                            class="card-body text-center d-flex align-items-between flex-column justify-content-around ">
                             <i class="fas fa-recycle fa-3x p-1"></i>
                             <h5 class="card-title">Troubleshoot</h5>
                             <p class="card-text">See if there are any outages and restart your system to become problem
@@ -319,17 +308,26 @@
 
                     <div class="card m-1" style="width: 15rem;">
 
-                        <div class="card-body text-center d-flex align-items-between flex-column justify-content-around">
+                        <div
+                            class="card-body text-center d-flex align-items-between flex-column justify-content-around">
                             <i class="fab fa-hire-a-helper fa-3x p-1"></i>
                             <h5 class="card-title">Help Online</h5>
-                            <p class="card-text">We are 24 hours online. <br> 
+                            <p class="card-text">We are 24 hours online. <br>
                                 Toll-free : xx-xxxxxxxxxx <br>
                                 <p>scan_me@scme.com</p>
                             </p>
-                            <a href="#" class="btn btn-primary">Call-us</a>
+                            <a href="#" class="btn btn-primary">Contact-us</a>
                         </div>
                     </div>
-
+                    <div class="w-100 mt-5">
+                        <div class="alert alert-success p-5 w-100">
+                            <h1>All-in-One IT systems Monitoring!</h1>
+                            <h3>Affordable. Powerful. Get Started in Minutes.</h3>
+                            <button class="btn btn-success mt-5 w-50">
+                                Build your custom plan
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
