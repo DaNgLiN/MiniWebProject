@@ -73,7 +73,7 @@
     font-family: 'Roboto Slab', serif;
 }
 
-.main_body_support .card-body a {
+.main_body_support .card-body button {
     font-style: italic;
 
 }
@@ -318,7 +318,31 @@
                             <i class="fas fa-tachometer-alt fa-3x p-1"></i>
                             <h5 class="card-title">Improve Speeds</h5>
                             <p class="card-text">Explore steps you can take to improve your Internet speed.</p>
-                            <a href="#" class="btn btn-primary">Get Tips</a>
+                            <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                Get Tips
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
                         </div>
                     </div>
 
@@ -330,7 +354,32 @@
                             <h5 class="card-title">Disk Clean</h5>
                             <p class="card-text">Free up unnecessary spaces. Delete temporary files, unused programs.
                             </p>
-                            <a href="#" class="btn btn-primary">Clean up</a>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                            Clean up
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                ...
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
 
@@ -342,7 +391,31 @@
                             <h5 class="card-title">Troubleshoot</h5>
                             <p class="card-text">See if there are any outages and restart your system to become problem
                                 free.</p>
-                            <a href="#" class="btn btn-primary">Check Outages</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                            Check Outages
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
 
@@ -356,7 +429,88 @@
                                 Toll-free : xx-xxxxxxxxxx <br>
                                 <p>scan_me@scme.com</p>
                             </p>
-                            <a href="#" class="btn btn-primary">Contact-us</a>
+                            <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#thirdone">
+                                Contact-us
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="thirdone" tabindex="-1" role="dialog" aria-labelledby="thirdoneTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Contact Us</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <div class="container">
+                           
+                            <div class="row justify-content-center">
+                                <div class="col-12 ">
+
+
+                    <!--Form with header-->
+
+                    <form id="myForm" method="post">
+                        <div class="card border-primary rounded-0">
+                            <div class="card-header p-0">
+                                <div class="bg-info text-white text-center py-2">
+                                    <h3><i class="fa fa-envelope"></i> Send your Queries</h3>
+                                    <p class="m-0">Feel free to Ask</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
+
+                                <!--Body-->
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="@username" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                        </div>
+                                        <input type="email" class="form-control" id="nombre" name="email" placeholder="example@gmail.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                                        </div>
+                                        <textarea class="form-control" placeholder="Write your message" required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <input type="submit" value="Send" class="btn btn-info btn-block rounded-0 py-2">
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <!--Form with header-->
+
+
+                </div>
+	</div>
+</div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"  onclick="clearthis()">Clear</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
                         </div>
                     </div>
                     <div class="w-100 mt-5">
@@ -443,3 +597,10 @@
     </div>
 </div>
 </div>
+
+<script>
+
+function clearthis(){
+    document.getElementById("myForm").reset();
+}
+</script>
