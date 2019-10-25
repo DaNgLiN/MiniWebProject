@@ -94,7 +94,7 @@
 </div>
 
 
-<!-- Modal -->
+<!-- Modal 
 <div class="modal fade" id="side_menu_settings" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -167,4 +167,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

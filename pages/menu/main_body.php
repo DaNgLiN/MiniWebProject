@@ -77,6 +77,157 @@
     font-style: italic;
 
 }
+
+.progress{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+.progress:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress .progress-left{
+    left: 0;
+}
+.progress .progress-bar{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress .progress-right{
+    right: 0;
+}
+.progress .progress-right .progress-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #44484b;
+    font-size: 24px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.progress.blue .progress-bar{
+    border-color: #049dff;
+}
+.progress.blue .progress-left .progress-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar{
+    border-color: #fdba04;
+}
+.progress.yellow .progress-left .progress-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.pink .progress-bar{
+    border-color: #ed687c;
+}
+.progress.pink .progress-left .progress-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+.progress.green .progress-bar{
+    border-color: #1abc9c;
+}
+.progress.green .progress-left .progress-bar{
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 20px; }
+}
+
 </style>
 <div class="container-fluid text-light overflow-auto w-100 h-100 bg-danger p-0 m-0 ">
 
@@ -278,7 +429,74 @@
                             <i class="fas fa-tachometer-alt fa-3x p-1"></i>
                             <h5 class="card-title">Improve Speeds</h5>
                             <p class="card-text">Explore steps you can take to improve your Internet speed.</p>
-                            <a href="#" class="btn btn-primary">Get Tips</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modelone">
+                            Get Tips
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modelone" tabindex="-1" role="dialog" aria-labelledby="modeloneLabel" aria-hidden="true">
+                            <div class="modal-dialog  modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modeloneLabel">Tips to make Internet Faster</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                <table class="table table-striped text-align-left">
+                                        <thead>
+                                          
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            <th scope="row">1</th>
+                                            <td>Consider Your data cap</td>
+                                            </tr>
+                                            <tr>
+                                            <th scope="row">2</th>
+                                            <td>Give your router break</td>
+                                            </tr>
+                                            <tr>
+                                            <th scope="row">3</th>
+                                            <td>Reposition your router</td>
+                                            </tr>
+                                            <tr>
+                                            <th scope="row">4</th>
+                                            <td>Embrace ethernet</td>
+                                            </tr>
+                                            <tr>
+                                            <th scope="row">5</th>
+                                            <td>Block those ads</td>
+                                            </tr>
+                                            <tr>
+                                            <th scope="row">6</th>
+                                            <td>Use a streamlined browser</td>
+                                            </tr>
+                                            <tr>
+                                            <th scope="row">7</th>
+                                            <td>Install a virus/malware scanner</td>
+                                            </tr>
+                                            <tr>
+                                            <th scope="row">8</th>
+                                            <td>Install a “clear cache” plugin</td>
+                                            </tr>
+                                            <tr>
+                                            <th scope="row">9</th>
+                                            <td>Negotiate with your internet service provider</td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                </div>
+                                <div class="modal-footer">
+                                   
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -290,9 +508,64 @@
                             <h5 class="card-title">Disk Clean</h5>
                             <p class="card-text">Free up unnecessary spaces. Delete temporary files, unused programs.
                             </p>
-                            <a href="#" class="btn btn-primary">Clean up</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modeltwo" onclick="runthis()">
+                            Clean Up
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modeltwo" tabindex="-1" role="dialog" aria-labelledby="modeltwoLabel" aria-hidden="true">
+                            <div class="modal-dialog  modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modeltwoLabel">Cleaning DiskS</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <div class="progress blue">
+                                            <span class="progress-left">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <span class="progress-right">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <div class="progress-value" id="progessone">0%</div>
+                                            
+                                        </div>
+                                        <h5>Memory Clean</h5>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="progress yellow">
+                                            <span class="progress-left">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <span class="progress-right">
+                                                <span class="progress-bar"></span>
+                                            </span>
+                                            <div class="progress-value" id="progesstwo">0%</div>
+                                        </div>
+                                        <h5>Cache Clean</h5>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
+                 
+
 
                     <div class="card m-1" style="width: 15rem;">
 
@@ -302,7 +575,31 @@
                             <h5 class="card-title">Troubleshoot</h5>
                             <p class="card-text">See if there are any outages and restart your system to become problem
                                 free.</p>
-                            <a href="#" class="btn btn-primary">Check Outages</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modelthird">
+                            Check Outages
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modelthird" tabindex="-1" role="dialog" aria-labelledby="modelthirdLabel" aria-hidden="true">
+                            <div class="modal-dialog  modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modelthirdLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    this is third one
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
 
@@ -316,7 +613,87 @@
                                 Toll-free : xx-xxxxxxxxxx <br>
                                 <p>scan_me@scme.com</p>
                             </p>
-                            <a href="#" class="btn btn-primary">Contact-us</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modelfourth">
+                            Contact US
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modelfourth" tabindex="-1" role="dialog" aria-labelledby="modelfourthLabel" aria-hidden="true">
+                            <div class="modal-dialog  modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modelfourthLabel">Contact Form <Form:post></Form:post></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12  ">
+
+
+                                                    <!--Form with header-->
+
+                                                    <form action="#" method="post" id="myForm">
+                                                        <div class="card border-primary rounded-0">
+                                                            <div class="card-header p-0">
+                                                                <div class="bg-info text-white text-center py-2">
+                                                                    <h3><i class="fa fa-envelope"></i> Send your Queries</h3>
+                                                                    <p class="m-0">Feel free to ask </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body p-3">
+
+                                                                <!--Body-->
+                                                                <div class="form-group">
+                                                                    <div class="input-group mb-2">
+                                                                        <div class="input-group-prepend">
+                                                                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                                                        </div>
+                                                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Username" required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="input-group mb-2">
+                                                                        <div class="input-group-prepend">
+                                                                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                                                        </div>
+                                                                        <input type="email" class="form-control" id="nombre" name="email" placeholder="john@gmail.com" required>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <div class="input-group mb-2">
+                                                                        <div class="input-group-prepend">
+                                                                            <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                                                                        </div>
+                                                                        <textarea class="form-control" placeholder="Type your message...." required></textarea>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="text-center">
+                                                                    <input type="submit" value="Send" class="btn btn-info btn-block rounded-5 py-2">
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </form>
+                                                    <!--Form with header-->
+
+
+                                                </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"  onClick="resetthis()">Clear</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
                     <div class="w-100 mt-5">
@@ -403,3 +780,42 @@
     </div>
 </div>
 </div>
+<script>
+function runthis(){
+    
+    var interval;
+    var val1=0
+
+
+    interval=setInterval(function(){ 
+    val1++;
+    document.getElementById('progessone').innerHTML= val1+"%";
+    
+    
+    if(val1==100){
+        clearInterval(interval);
+    }
+    },37);
+
+    var interval2;
+    var val2=0
+
+
+    interval2=setInterval(function(){ 
+    val2++;
+    document.getElementById('progesstwo').innerHTML= val2+"%";
+    
+    
+    if(val2==100){
+        clearInterval(interval2);
+    }
+    },30);
+
+
+                                
+}
+
+function resetthis(){
+    document.getElementById("myForm").reset();
+}
+</script>
