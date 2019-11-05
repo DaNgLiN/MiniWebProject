@@ -73,7 +73,7 @@
     font-family: 'Roboto Slab', serif;
 }
 
-.main_body_support .card-body a {
+.main_body_support .card-body button {
     font-style: italic;
 
 }
@@ -133,10 +133,11 @@
 
 
             <div class="home bg-danger w-100 h-100" id="item-2">
-                <div class="alert text-center">
+                <div class="alert text-center pt-5">
                     <h1>Monitoring Work Processes</h1>
                     <h3>One tool – total visibility over your System</h3>
-                    <p>Displays all running status, Real-time views, interactive charts, reports <br>See what it can do for you…</p>
+                    <p>Displays all running status, Real-time views, interactive charts, reports <br>See what it can do
+                        for you…</p>
                 </div>
 
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -145,37 +146,49 @@
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner text-light">
-                        <div class="carousel-item  active " style="height:500px;">
+                    <div class="carousel-inner text-light" style="height:430px;">
+                        <div class="carousel-item  active ">
                             <div class="d-flex justify-content-center">
                                 <div class="card bg-dark m-1 pt-4 pb-2 " style="width: 18rem;">
                                     <div class="card-body ">
 
-                                        <h5 class="card-title text-center"> <i class="fa fa-server fa-3x pb-2"></i> <p>System Information</p>
+                                        <h5 class="card-title text-center"> <i class="fa fa-server fa-3x pb-2"></i>
+                                            <p>System Information</p>
                                         </h5>
-                                        <p class="card-tex mt-5"style=" text-align: justify;">&nbsp;&nbsp; &nbsp; &nbsp; A computer system is a set of integrated devices that input, output, process, and store data and information.
+                                        <p class="card-tex mt-5" style=" text-align: justify;">&nbsp;&nbsp; &nbsp;
+                                            &nbsp; A computer system is a set of integrated devices that input, output,
+                                            process, and store data and information.
                                         </p>
-                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i> Run
+                                            Test</a>
                                     </div>
                                 </div>
 
                                 <div class="card bg-dark m-1 pt-4 pb-2 " style="width: 18rem;">
 
                                     <div class="card-body">
-                                        <h5 class="card-title text-center"> <i class="fa fa-microchip fa-3x pb-2"></i> <p>CPU</p></h5>
-                                        <p class="card-text  mt-5" style=" text-align: justify;"> &nbsp;&nbsp; &nbsp; &nbsp;A central processor or main processor, is the electronic
+                                        <h5 class="card-title text-center"> <i class="fa fa-microchip fa-3x pb-2"></i>
+                                            <p>CPU</p>
+                                        </h5>
+                                        <p class="card-text  mt-5" style=" text-align: justify;"> &nbsp;&nbsp; &nbsp;
+                                            &nbsp;A central processor or main processor, is the electronic
                                             circuitry within a computer that carries out the instructions</p>
-                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i> Run
+                                            Test</a>
                                     </div>
                                 </div>
 
                                 <div class="card bg-dark m-1 pt-4 pb-2" style="width: 18rem;">
 
                                     <div class="card-body">
-                                        <h5 class="card-title text-center"> <i class="fas fa-memory fa-3x pb-2"></i> <p>Memory</p></h5>
-                                        <p class="card-text  mt-5 " style=" text-align: justify;">&nbsp;&nbsp; &nbsp; &nbsp;It refers to a device that is used to store information for
+                                        <h5 class="card-title text-center"> <i class="fas fa-memory fa-3x pb-2"></i>
+                                            <p>Memory</p>
+                                        </h5>
+                                        <p class="card-text  mt-5 " style=" text-align: justify;">&nbsp;&nbsp; &nbsp;
+                                            &nbsp;It refers to a device that is used to store information for
                                             immediate use in a computer hardware device.</p>
-                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i> Run
+                                            Test</a>
                                     </div>
                                 </div>
 
@@ -183,34 +196,47 @@
                             </div>
                         </div>
                         <div class="carousel-item" style="height:500px;">
-                            <div class="d-flex justify-content-center p-5">
+                            <div class="d-flex justify-content-center ">
 
                                 <div class="card bg-dark m-1 pt-4 pb-2 " style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title text-center"> <i class="fas fa-laptop fa-3x pb-2"></i> <p>Operating System</p></h5>
-                                        <p class="card-text  mt-5 " style=" text-align: justify;"> &nbsp;&nbsp; &nbsp; &nbsp;An OS is system software that manages computer hardware,
+                                        <h5 class="card-title text-center"> <i class="fas fa-laptop fa-3x pb-2"></i>
+                                            <p>Operating System</p>
+                                        </h5>
+                                        <p class="card-text  mt-5 " style=" text-align: justify;"> &nbsp;&nbsp; &nbsp;
+                                            &nbsp;An OS is system software that manages computer hardware,
                                             software resources, and provides common services.</p>
-                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i> Run
+                                            Test</a>
                                     </div>
                                 </div>
 
                                 <div class="card bg-dark m-1  pt-4 pb-2" style="width: 18rem;">
 
                                     <div class="card-body">
-                                        <h5 class="card-title text-center"> <i class="fa fa-desktop fa-3x pb-2"></i> <p>Graphics</p></h5>
-                                        <p class="card-text  mt-5" style=" text-align: justify;"> &nbsp;&nbsp; &nbsp; &nbsp;Graphics are pictures and films created using computers. it
+                                        <h5 class="card-title text-center"> <i class="fa fa-desktop fa-3x pb-2"></i>
+                                            <p>Graphics</p>
+                                        </h5>
+                                        <p class="card-text  mt-5" style=" text-align: justify;"> &nbsp;&nbsp; &nbsp;
+                                            &nbsp;Graphics are pictures and films created using computers. it
                                             refers to computer-generated image data .</p>
-                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i> Run
+                                            Test</a>
                                     </div>
                                 </div>
 
                                 <div class="card bg-dark m-1 pt-4 pb-2" style="width: 18rem;">
 
                                     <div class="card-body">
-                                        <h5 class="card-title text-center"> <i class="fas fa-network-wired fa-3x pb-2"></i> <p>Network</p></h5>
-                                        <p class="card-text mt-5 " style=" text-align: justify;"> &nbsp;&nbsp; &nbsp; &nbsp;The Network Computer was a diskless desktop computer device
+                                        <h5 class="card-title text-center"> <i
+                                                class="fas fa-network-wired fa-3x pb-2"></i>
+                                            <p>Network</p>
+                                        </h5>
+                                        <p class="card-text mt-5 " style=" text-align: justify;"> &nbsp;&nbsp; &nbsp;
+                                            &nbsp;The Network Computer was a diskless desktop computer device
                                             made by Oracle Corporation from about 1996 to 2000..</p>
-                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i> Run
+                                            Test</a>
                                     </div>
                                 </div>
 
@@ -218,33 +244,47 @@
                             </div>
                         </div>
                         <div class="carousel-item" style="height:500px;">
-                            <div class="d-flex justify-content-center p-5">
+                            <div class="d-flex justify-content-center">
 
                                 <div class="card bg-dark m-1 pt-4 pb-2 " style="width: 18rem;">
                                     <div class="card-body">
-                                        <h5 class="card-title text-center"> <i class="fa fa-wifi fa-3x pb-2"></i> <p>WIFI</p></h5>
-                                        <p class="card-text mt-5 " style=" text-align: justify;"> &nbsp;&nbsp; &nbsp; &nbsp;Wi-Fi in Computer system uses radio waves to provide
+                                        <h5 class="card-title text-center"> <i class="fa fa-wifi fa-3x pb-2"></i>
+                                            <p>WIFI</p>
+                                        </h5>
+                                        <p class="card-text mt-5 " style=" text-align: justify;"> &nbsp;&nbsp; &nbsp;
+                                            &nbsp;Wi-Fi in Computer system uses radio waves to provide
                                             wireless high-speed Internet and network connections</p>
-                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i> Run
+                                            Test</a>
                                     </div>
                                 </div>
 
                                 <div class="card bg-dark m-1  pt-4 pb-2" style="width: 18rem;">
 
                                     <div class="card-body">
-                                        <h5 class="card-title text-center"> <i class="fa fa-battery-half fa-3x pb-2"></i> <p>Battery</p></h5>
-                                        <p class="card-text mt-5" style=" text-align: justify;"> &nbsp;&nbsp; &nbsp; &nbsp;A battery is a hardware component that supplies power to a
+                                        <h5 class="card-title text-center"> <i
+                                                class="fa fa-battery-half fa-3x pb-2"></i>
+                                            <p>Battery</p>
+                                        </h5>
+                                        <p class="card-text mt-5" style=" text-align: justify;"> &nbsp;&nbsp; &nbsp;
+                                            &nbsp;A battery is a hardware component that supplies power to a
                                             device, enabling that device to work without a power cord.</p>
-                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i> Run
+                                            Test</a>
                                     </div>
                                 </div>
 
                                 <div class="card bg-dark m-1 pt-4 pb-2" style="width: 18rem;">
 
                                     <div class="card-body">
-                                        <h5 class="card-title text-center"> <i class="fa fa-cube fa-3x pb-2"></i> <p>Virtual Box</p></h5>
-                                        <p class="card-text mt-5" style=" text-align: justify;"> &nbsp;&nbsp; &nbsp; &nbsp;Oracle VM VirtualBox  (VB) is a free and VB open-source hosted hypervisor for x86 virtualization, developed by Oracle Corporation.</p>
-                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i>  Run Test</a>
+                                        <h5 class="card-title text-center"> <i class="fa fa-cube fa-3x pb-2"></i>
+                                            <p>Virtual Box</p>
+                                        </h5>
+                                        <p class="card-text mt-5" style=" text-align: justify;"> &nbsp;&nbsp; &nbsp;
+                                            &nbsp;Oracle VM VirtualBox (VB) is a free and VB open-source hosted
+                                            hypervisor for x86 virtualization, developed by Oracle Corporation.</p>
+                                        <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i> Run
+                                            Test</a>
                                     </div>
                                 </div>
 
@@ -278,7 +318,31 @@
                             <i class="fas fa-tachometer-alt fa-3x p-1"></i>
                             <h5 class="card-title">Improve Speeds</h5>
                             <p class="card-text">Explore steps you can take to improve your Internet speed.</p>
-                            <a href="#" class="btn btn-primary">Get Tips</a>
+                            <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                Get Tips
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
                         </div>
                     </div>
 
@@ -290,7 +354,32 @@
                             <h5 class="card-title">Disk Clean</h5>
                             <p class="card-text">Free up unnecessary spaces. Delete temporary files, unused programs.
                             </p>
-                            <a href="#" class="btn btn-primary">Clean up</a>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                            Clean up
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                ...
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
 
@@ -302,7 +391,31 @@
                             <h5 class="card-title">Troubleshoot</h5>
                             <p class="card-text">See if there are any outages and restart your system to become problem
                                 free.</p>
-                            <a href="#" class="btn btn-primary">Check Outages</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                            Check Outages
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
 
@@ -316,14 +429,95 @@
                                 Toll-free : xx-xxxxxxxxxx <br>
                                 <p>scan_me@scme.com</p>
                             </p>
-                            <a href="#" class="btn btn-primary">Contact-us</a>
+                            <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#thirdone">
+                                Contact-us
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="thirdone" tabindex="-1" role="dialog" aria-labelledby="thirdoneTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Contact Us</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <div class="container">
+                           
+                            <div class="row justify-content-center">
+                                <div class="col-12 ">
+
+
+                    <!--Form with header-->
+
+                    <form id="myForm" method="post">
+                        <div class="card border-primary rounded-0">
+                            <div class="card-header p-0">
+                                <div class="bg-info text-white text-center py-2">
+                                    <h3><i class="fa fa-envelope"></i> Send your Queries</h3>
+                                    <p class="m-0">Feel free to Ask</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
+
+                                <!--Body-->
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="@username" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                        </div>
+                                        <input type="email" class="form-control" id="nombre" name="email" placeholder="example@gmail.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                                        </div>
+                                        <textarea class="form-control" placeholder="Write your message" required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <input type="submit" value="Send" class="btn btn-info btn-block rounded-0 py-2">
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <!--Form with header-->
+
+
+                </div>
+	</div>
+</div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"  onclick="clearthis()">Clear</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
                         </div>
                     </div>
                     <div class="w-100 mt-5">
-                        <div class="alert alert-success p-5 w-100">
+                        <div class="alert alert-success p-5 w-100" style="box-shadow:0px 5px 10px 1px black">
                             <h1>All-in-One IT systems Monitoring!</h1>
                             <h3>Affordable. Powerful. Get Started in Minutes.</h3>
-                            <button class="btn btn-success mt-5 w-50">
+                            <button class="btn btn-success mt-5 w-50 text-bold" style="box-shadow:0px 2px 10px 1px black">
                                 Build your custom plan
                             </button>
                         </div>
@@ -403,3 +597,10 @@
     </div>
 </div>
 </div>
+
+<script>
+
+function clearthis(){
+    document.getElementById("myForm").reset();
+}
+</script>
