@@ -58,7 +58,7 @@
     }
 
     50% {
-        transform: scale(1.1);
+        transform: scale(1);
 
     }
 }
@@ -81,10 +81,10 @@
 <div class="container-fluid text-light overflow-auto w-100 h-100 bg-danger p-0 m-0 ">
 
     <div class="w-100 bg-info">
-        <div class="bg-info p-0 m-0 h-10 " data-spy="scroll" style="height:100vh;overflow-y:scroll"
+        <div class="bg-info p-0 m-0" data-spy="scroll" style="height:100vh;overflow-y:scroll"
             data-target="#navbar-example3" data-offset="100">
 
-            <div class="home w-100 h-100 bg-dark" id="item-1" style="position:relative">
+            <div class="home w-100 bg-dark" id="item-1" style="position:relative;height:110vh">
                 <div class="" style="position:relative;width:100%;top:-100px">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 200"
@@ -111,7 +111,7 @@
                             <div id="outerContainer">
                                 <div id="container">
                                     <div class="item">
-                                        <button class="btn text-light  rounded-circle btn-primary   "
+                                        <button class="btn btn text-light  rounded-circle btn-primary   "
                                             style="width:150px;height:150px;font-size:50px;font-family:Milea"
                                             onclick="loaderWall()">GO!</button>
                                     </div>
@@ -133,9 +133,9 @@
 
 
             <div class="home bg-danger w-100 h-100" id="item-2">
-                <div class="alert text-center pt-5">
+                <div class="alert text-center pt-5" style="font-family: 'ZCOOL XiaoWei', serif">
                     <h1>Monitoring Work Processes</h1>
-                    <h3>One tool – total visibility over your System</h3>
+                    <h3>One Tool – Total Visibility Over Your System</h3>
                     <p>Displays all running status, Real-time views, interactive charts, reports <br>See what it can do
                         for you…</p>
                 </div>
@@ -148,7 +148,7 @@
                     </ol>
                     <div class="carousel-inner text-light" style="height:430px;">
                         <div class="carousel-item  active ">
-                            <div class="d-flex justify-content-center">
+                            <div class="d-flex justify-content-center" style="font-family: 'Sarabun', sans-serif;">
                                 <div class="card bg-dark m-1 pt-4 pb-2 " style="width: 18rem;">
                                     <div class="card-body ">
 
@@ -185,7 +185,7 @@
                                             <p>Memory</p>
                                         </h5>
                                         <p class="card-text  mt-5 " style=" text-align: justify;">&nbsp;&nbsp; &nbsp;
-                                            &nbsp;It refers to a device that is used to store information for
+                                            &nbsp;Memory refers to a device that is used to store information for
                                             immediate use in a computer hardware device.</p>
                                         <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i> Run
                                             Test</a>
@@ -360,11 +360,13 @@
                         </div>
                     </div>
                     <div class="w-100 mt-5">
-                        <div class="alert alert-success p-5 w-100" style="box-shadow:0px 5px 10px 1px black">
-                            <h1>All-in-One IT systems Monitoring!</h1>
-                            <h3>Affordable. Powerful. Get Started in Minutes.</h3>
-                            <button class="btn btn-success mt-5 w-50 text-bold" style="box-shadow:0px 2px 10px 1px black">
-                                Build your custom plan
+                        <div class="alert alert-success p-5 w-100" style="box-shadow:0px 5px 10px 1px grey">
+                            <h1 style="font-family: 'Satisfy', cursive;">All-in-One IT systems Monitoring!</h1>
+                            <h3 style="font-family: 'Satisfy', cursive;">Affordable. Powerful. Get Started in Minutes.
+                            </h3>
+                            <button class="btn btn-success btn-lg mt-5 w-50 font-weight-bold"
+                                style="box-shadow:0px 2px 10px 1px grey">
+                                Build Your Custom Plan
                             </button>
                         </div>
                     </div>
@@ -388,12 +390,12 @@
                         </div>
                         <div>
                             <h5>Memory</h5>
-                            <P><span>Total</span> <br>
-                                <span>Available</span> <br>
-                                <span> Free </span><br>
+                            <P><span>Total Memory</span> <br>
+                                <span>Available Memory</span> <br>
+                                <span> Free Memory</span><br>
                                 <span> Manufacture </span><br>
                                 <span> Clock Speed </span><br>
-                                <span> Size</span> <br>
+                                <span> Size Type</span> <br>
                                 <span> Voltage Configured</span> </p>
 
                         </div>
@@ -430,12 +432,32 @@
                         </div>
 
                     </div>
+
                     <div class=" text-center">
-                        <p>Ookla®, Speedtest®, and Speedtest Intelligence® are among some of the federally registered
-                            trademarks of Ookla, LLC and <br> may only be used with explicit written permission. ©
-                            2006-2019 Ookla, LLC. All Rights Reserved</p>
+                        <div class="w-100 d-flex justify-content-center pb-5">
+                            <div class="w-100 bg-secondary" style="height:1px;box-shadow:0px 5px 10px 0px black"></div>
+                        </div>
+                        <p>ScanMe®, Speedtest®, and Speedtest Intelligence® are among some of the federally registered
+                            trademarks of ScanMe, LLC and <br> may only be used with explicit written permission. ©
+                            2019 ScanMe, LLC. All Rights Reserved</p>
                         <p>Privacy Policy Terms of Use Accessibility
                             AdChoices</p>
+                        <div id="" class="w-100 d-flex justify-content-center">
+                            <i class="fab fa-twitter pr-5" style="font-size:16px"></i>
+                            <i class="fab fa-facebook-f pr-5" style="font-size:16px"></i>
+                            <i class="fab fa-github pr-5" style="font-size:16px"></i>
+                            <i class="fab fa-instagram pr-5" style="font-size:16px"></i>
+                            <i class="fab fa-whatsapp pr-5" style="font-size:16px"></i>
+                        </div>
+                        <div class="font-weight-bold">
+                            <p></p>
+                            <span>&copy Copyright, 2019</span><br>
+                            <span style="font-family: 'Satisfy', cursive;letter-spacing:2px">Developers :</span>
+                            <span style="font-family: 'Satisfy', cursive;letter-spacing:2px">NepsGeek's, Nepal</span>
+                        </div>
+                        <div class="w-100 d-flex justify-content-center pt-3">
+                            <div class="w-100 bg-secondary" style="height:1px;box-shadow:0px 5px 10px 0px black"></div>
+                        </div>
                     </div>
                 </div>
             </div>
