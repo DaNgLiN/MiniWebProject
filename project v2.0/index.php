@@ -22,7 +22,8 @@ font-family: 'Pacifico', cursive;
 font-family: 'Satisfy', cursive;
 font-family: 'Sarabun', sans-serif;
 -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto|Sarabun|Satisfy|Roboto+Slab|Ubuntu|Pacifico|Fascinate+Inline|ZCOOL+XiaoWei&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto|Sarabun|Satisfy|Roboto+Slab|Ubuntu|Pacifico|Fascinate+Inline|ZCOOL+XiaoWei&display=swap"
         rel="stylesheet">
 
     <style>
@@ -30,7 +31,7 @@ font-family: 'Sarabun', sans-serif;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        scroll-behavior:smooth;
+        scroll-behavior: smooth;
     }
 
     *::-webkit-scrollbar {
