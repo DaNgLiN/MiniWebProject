@@ -7,7 +7,7 @@ function sideMenuMouseOver() {
     side_menu_social_icons.classList.add("side_menu_social_icons_col");
 
     document.getElementById("side_menu_developers").style.display = "none";
-    setTimeout(function() {
+    setTimeout(function () {
         document.getElementById("side_menu_developers").style.transition = "0.5s";
         document.getElementById("side_menu_developers").style.opacity = 0;
     }, 100)
@@ -29,7 +29,7 @@ function sideMenuMouseOut() {
 
 
     document.getElementById("side_menu_developers").style.display = "block";
-    setTimeout(function() {
+    setTimeout(function () {
         document.getElementById("side_menu_developers").style.transition = "1s";
         document.getElementById("side_menu_developers").style.opacity = 1;
     }, 100)
