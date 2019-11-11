@@ -258,6 +258,7 @@ background: #1AA85C;
                                             style="width:150px;height:150px;font-size:50px;font-family:Milea"
                                             onclick="loaderWall()">GO!</button>
 
+
                                     </div>
 
                                     <div class="circle" style="animation-delay: 0s"></div>
@@ -771,6 +772,7 @@ background: #1AA85C;
                             <i class="fas fa-tachometer-alt fa-3x p-1"></i>
                             <h5 class="card-title">Improve Speeds</h5>
                             <p class="card-text">Explore steps you can take to improve your Internet speed.</p>
+
                             <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#spped">
                                 Get Tips
@@ -811,7 +813,11 @@ background: #1AA85C;
                                     </div>
                                 </div>
                                 </div>
+
+                        </div>
+
        </div>
+
                     </div>
 
                     <div class="card m-1" style="width: 15rem;">
@@ -821,7 +827,9 @@ background: #1AA85C;
                             <i class="fas fa-trash fa-3x p-1"></i>
                             <h5 class="card-title">Disk Clean</h5>
                             <p class="card-text">Free up unnecessary spaces. Delete temporary files, unused programs.
-                          
+
+                            </p>
+
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary" data-toggle="modal" onclick="cleaningfunc()" data-target="#clean">
                             Clean up
@@ -1254,6 +1262,6 @@ function drawCircle (radius, width, color, c, angle) {
 render();
 
    
-}
+
 </script>
 

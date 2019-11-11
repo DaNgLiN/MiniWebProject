@@ -17,9 +17,12 @@ function loaderWall() {
     document.getElementById("_loader_wall").style.display = "block";
     setTimeout(function () {
 
+      
+
         location.replace("http://localhost/final/pages/main.php");
        
     }, Math.floor(Math.random() * 10000) + 5000)
+
 
 
 }
