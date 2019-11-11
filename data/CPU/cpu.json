@@ -13,6 +13,11 @@
     "cores": 4,
     "physicalCores": 2,
     "processors": 1,
-    "socket": "Other"
-    
+    "socket": "Other",
+    "cache": {
+        "l1d": 0,
+        "l1i": 0,
+        "l2": 524288,
+        "l3": 3145728
+    }
 }
