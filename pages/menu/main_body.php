@@ -58,7 +58,7 @@
     }
 
     50% {
-        transform: scale(1);
+        transform: scale(1.1);
 
     }
 }
@@ -73,7 +73,7 @@
     font-family: 'Roboto Slab', serif;
 }
 
-.main_body_support .card-body a {
+.main_body_support .card-body button {
     font-style: italic;
 
 }
@@ -81,10 +81,10 @@
 <div class="container-fluid text-light overflow-auto w-100 h-100 bg-danger p-0 m-0 ">
 
     <div class="w-100 bg-info">
-        <div class="bg-info p-0 m-0" data-spy="scroll" style="height:100vh;overflow-y:scroll"
+        <div class="bg-info p-0 m-0 h-10 " data-spy="scroll" style="height:100vh;overflow-y:scroll"
             data-target="#navbar-example3" data-offset="100">
 
-            <div class="home w-100 bg-dark" id="item-1" style="position:relative;height:110vh">
+            <div class="home w-100 h-100 bg-dark" id="item-1" style="position:relative">
                 <div class="" style="position:relative;width:100%;top:-100px">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 200"
@@ -111,9 +111,11 @@
                             <div id="outerContainer">
                                 <div id="container">
                                     <div class="item">
+
                                         <button class="btn btn text-light  rounded-circle btn-primary   "
                                             style="width:150px;height:150px;font-size:50px;font-family:Milea"
                                             onclick="loaderWall()">GO!</button>
+
                                     </div>
 
                                     <div class="circle" style="animation-delay: 0s"></div>
@@ -133,9 +135,9 @@
 
 
             <div class="home bg-danger w-100 h-100" id="item-2">
-                <div class="alert text-center pt-5" style="font-family: 'ZCOOL XiaoWei', serif">
+                <div class="alert text-center pt-5">
                     <h1>Monitoring Work Processes</h1>
-                    <h3>One Tool – Total Visibility Over Your System</h3>
+                    <h3>One tool – total visibility over your System</h3>
                     <p>Displays all running status, Real-time views, interactive charts, reports <br>See what it can do
                         for you…</p>
                 </div>
@@ -148,7 +150,7 @@
                     </ol>
                     <div class="carousel-inner text-light" style="height:430px;">
                         <div class="carousel-item  active ">
-                            <div class="d-flex justify-content-center" style="font-family: 'Sarabun', sans-serif;">
+                            <div class="d-flex justify-content-center">
                                 <div class="card bg-dark m-1 pt-4 pb-2 " style="width: 18rem;">
                                     <div class="card-body ">
 
@@ -185,7 +187,7 @@
                                             <p>Memory</p>
                                         </h5>
                                         <p class="card-text  mt-5 " style=" text-align: justify;">&nbsp;&nbsp; &nbsp;
-                                            &nbsp;Memory refers to a device that is used to store information for
+                                            &nbsp;It refers to a device that is used to store information for
                                             immediate use in a computer hardware device.</p>
                                         <a href="#" class="btn btn-success w-100"><i class="fa fa-eye pr-2"></i> Run
                                             Test</a>
@@ -318,7 +320,48 @@
                             <i class="fas fa-tachometer-alt fa-3x p-1"></i>
                             <h5 class="card-title">Improve Speeds</h5>
                             <p class="card-text">Explore steps you can take to improve your Internet speed.</p>
-                            <a href="#" class="btn btn-primary">Get Tips</a>
+
+                            <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#spped">
+                                Get Tips
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="spped" tabindex="-1" role="dialog" aria-labelledby="sppedTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                            <h5 class="modal-title" id="speedTitle"><i class="fas fa-tachometer-alt  pb-2"></i> <b>Internet Speed Boost</b></h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                    <div class="modal-body" style="height:500px;overflow:hidden;;overflow-y:scroll;">
+                                    <div class="list-group">
+                                    <button type="button" class="list-group-item list-group-item-action text-uppercase active">
+                                        Tips to improve performance
+                                    </button>
+                                    <button type="button" class="list-group-item list-group-item-action ">Test a different modem/router</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Scan for viruses</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Check for on-system interference</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Check your filters</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Try getting rid of your cordless phone</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Check for external interference</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Check for Foxtel or other types of TV</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Shorten and replace cables</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Update firmware and software regularly</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Find your router/ISP’s best settings</button>
+                                    <button type="button" class="list-group-item list-group-item-action">Check the cabling and do a line test</button>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+
                         </div>
                     </div>
 
@@ -330,7 +373,26 @@
                             <h5 class="card-title">Disk Clean</h5>
                             <p class="card-text">Free up unnecessary spaces. Delete temporary files, unused programs.
                             </p>
-                            <a href="#" class="btn btn-primary">Clean up</a>
+
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" onclick="cleaningfunc()" data-target="#clean">
+                            Clean up
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="clean" tabindex="-1" role="dialog" aria-labelledby="cleanTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                               
+                                <div class="modal-body">
+                                <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+                                </div>
+                                
+                            </div>
+                            </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -342,7 +404,32 @@
                             <h5 class="card-title">Troubleshoot</h5>
                             <p class="card-text">See if there are any outages and restart your system to become problem
                                 free.</p>
-                            <a href="#" class="btn btn-primary">Check Outages</a>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#troublehot">
+                            Check Outages
+                            </button>
+
+                            <!-- Modal -->
+                            <div id="troublehot" class="modal fade">
+                            <div class="modal-dialog modal-confirm">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="icon-box">
+                                            <i class="fas fa-check fa-3x"></i>
+                                        </div>				
+                                        <h4 class="modal-title ml-100 w-100 ">Awesome!</h4>	
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="text-center">Your system is working normaly. All the process is working safely with no deadlock !!.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+
                         </div>
                     </div>
 
@@ -356,17 +443,98 @@
                                 Toll-free : xx-xxxxxxxxxx <br>
                                 <p>scan_me@scme.com</p>
                             </p>
-                            <a href="#" class="btn btn-primary">Contact-us</a>
+                            <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#thirdone">
+                                Contact-us
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="thirdone" tabindex="-1" role="dialog" aria-labelledby="thirdoneTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Contact Us</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <div class="container">
+                           
+                            <div class="row justify-content-center">
+                                <div class="col-12 ">
+
+
+                    <!--Form with header-->
+
+                    <form id="myForm" method="post">
+                        <div class="card border-primary rounded-0">
+                            <div class="card-header p-0">
+                                <div class="bg-info text-white text-center py-2">
+                                    <h3><i class="fa fa-envelope"></i> Send your Queries</h3>
+                                    <p class="m-0">Feel free to Ask</p>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
+
+                                <!--Body-->
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="@username" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                        </div>
+                                        <input type="email" class="form-control" id="nombre" name="email" placeholder="example@gmail.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                                        </div>
+                                        <textarea class="form-control" placeholder="Write your message" required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <input type="submit" value="Send" class="btn btn-info btn-block rounded-0 py-2">
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                    <!--Form with header-->
+
+
+                </div>
+	</div>
+</div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"  onclick="clearthis()">Clear</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">close</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
                         </div>
                     </div>
                     <div class="w-100 mt-5">
-                        <div class="alert alert-success p-5 w-100" style="box-shadow:0px 5px 10px 1px grey">
-                            <h1 style="font-family: 'Satisfy', cursive;">All-in-One IT systems Monitoring!</h1>
-                            <h3 style="font-family: 'Satisfy', cursive;">Affordable. Powerful. Get Started in Minutes.
-                            </h3>
-                            <button class="btn btn-success btn-lg mt-5 w-50 font-weight-bold"
-                                style="box-shadow:0px 2px 10px 1px grey">
-                                Build Your Custom Plan
+
+                        <div class="alert alert-success p-5 w-100" style="box-shadow:0px 5px 10px 1px black">
+                            <h1>All-in-One IT systems Monitoring!</h1>
+                            <h3>Affordable. Powerful. Get Started in Minutes.</h3>
+                            <button class="btn btn-success mt-5 w-50 text-bold" style="box-shadow:0px 2px 10px 1px black" data-toggle="modal" data-target="#exampleModalLong">
+                                Build your custom plan
+
                             </button>
                         </div>
                     </div>
@@ -390,12 +558,12 @@
                         </div>
                         <div>
                             <h5>Memory</h5>
-                            <P><span>Total Memory</span> <br>
-                                <span>Available Memory</span> <br>
-                                <span> Free Memory</span><br>
+                            <P><span>Total</span> <br>
+                                <span>Available</span> <br>
+                                <span> Free </span><br>
                                 <span> Manufacture </span><br>
                                 <span> Clock Speed </span><br>
-                                <span> Size Type</span> <br>
+                                <span> Size</span> <br>
                                 <span> Voltage Configured</span> </p>
 
                         </div>
@@ -432,32 +600,12 @@
                         </div>
 
                     </div>
-
                     <div class=" text-center">
-                        <div class="w-100 d-flex justify-content-center pb-5">
-                            <div class="w-100 bg-secondary" style="height:1px;box-shadow:0px 5px 10px 0px black"></div>
-                        </div>
-                        <p>ScanMe®, Speedtest®, and Speedtest Intelligence® are among some of the federally registered
-                            trademarks of ScanMe, LLC and <br> may only be used with explicit written permission. ©
-                            2019 ScanMe, LLC. All Rights Reserved</p>
+                        <p>Ookla®, Speedtest®, and Speedtest Intelligence® are among some of the federally registered
+                            trademarks of Ookla, LLC and <br> may only be used with explicit written permission. ©
+                            2006-2019 Ookla, LLC. All Rights Reserved</p>
                         <p>Privacy Policy Terms of Use Accessibility
                             AdChoices</p>
-                        <div id="" class="w-100 d-flex justify-content-center">
-                            <i class="fab fa-twitter pr-5" style="font-size:16px"></i>
-                            <i class="fab fa-facebook-f pr-5" style="font-size:16px"></i>
-                            <i class="fab fa-github pr-5" style="font-size:16px"></i>
-                            <i class="fab fa-instagram pr-5" style="font-size:16px"></i>
-                            <i class="fab fa-whatsapp pr-5" style="font-size:16px"></i>
-                        </div>
-                        <div class="font-weight-bold">
-                            <p></p>
-                            <span>&copy Copyright, 2019</span><br>
-                            <span style="font-family: 'Satisfy', cursive;letter-spacing:2px">Developers :</span>
-                            <span style="font-family: 'Satisfy', cursive;letter-spacing:2px">NepsGeek's, Nepal</span>
-                        </div>
-                        <div class="w-100 d-flex justify-content-center pt-3">
-                            <div class="w-100 bg-secondary" style="height:1px;box-shadow:0px 5px 10px 0px black"></div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -465,4 +613,146 @@
     </div>
 </div>
 </div>
+
+
+<script>
+
+function clearthis(){
+    document.getElementById("myForm").reset();
+}
+
+
+function cleaningfunc(){
+    cleaning();
+    
+}
+
+function cleaning(){
+    document.body.style.background = '#fff';
+
+var c = document.createElement('canvas');
+c.id = "cleaningprocess";
+c.style.position = 'fixed';
+c.style.width = '100%';
+c.style.height = '100%';
+c.style.left = '0';
+c.style.top = '0';
+c.width = window.innerWidth;
+c.height = window.innerHeight;
+var root = document.body.createShadowRoot();
+root.appendChild(c);
+setTimeout(function(){
+   // alert()
+   c.style.display = "none";
+   alert("Cleaned, Successful!!")
+   location.reload("http://localhost/final/#item-3");
+  // location.reload("http://localhost/final/#item-3")
+},7000)
+
+var canvas = c.getContext('2d');
+
+var tick = 0, 
+    factor = 2.3,
+    cMap = [],
+    readings = [],
+    randomTexts = ['Rebooting insanity core',
+                   'applying Branifuck logic', 
+                   'feeting pet goats',
+                  'Deleting empathy sectors',
+                  'Doing spring cleaning'],
+    currentText = [],
+    centerX = 0,
+    centerY = 0;
+
+function render () {
+    var halfW = window.innerWidth / 2,
+    halfH = window.innerHeight / 2,
+    iH = window.innerHeight / 10,
+    iW = window.innerWidth / 10;
+    tick += 1;
+    canvas.clearRect(0, 0, window.innerWidth, window.innerHeight);
+    
+    if (tick % 15 === 0) {
+        currentText.push(randomTexts[Math.round(Math.random() * (randomTexts.length - 1))]);
+    }
+    
+    for (var x = 0; x < 10; x += 1) {
+        
+        for (var y = 0; y < 10; y += 1) {
+            var color = null,
+                id = y * 10 + x;
+            if (typeof cMap[id] === 'undefined') {
+                color = Math.round(Math.random() * 50);
+                cMap.push(color);
+            } else {
+                if (Math.random() > 0.999) {
+                    color = Math.round(Math.random() * 50);
+                    cMap[id] = color;
+                } else {
+                    color = cMap[y * 10 + x];
+                }
+            }
+            canvas.fillStyle = 'rgba(' + color + ',' + color + ',' + color + ', .3)';
+            canvas.fillRect (x * iW,y*iH,iW,iH);
+        }
+    }
+    
+    for (var i = 0; i < readings.length; i += 1) {
+            canvas.fillStyle = 'rgba(255,255,255,.3)';
+        canvas.fillRect (15 * i, window.innerHeight / 2 - readings[i], 6, readings[i] * 2);
+    }
+    
+    if (readings.length > window.innerWidth / 15) {
+        readings = [];
+    }
+    
+    if (tick % 5 === 0)
+        readings.push(Math.random() * 120);
+    
+    drawCircle(1 * factor, 15 * factor, 'rgba(192, 57, 43,1.0)', 180, tick * 2.5);
+    drawCircle(20 * factor, 15 * factor, '#fff', 180, tick * 1.5);
+    drawCircle(40 * factor, 15 * factor, 'rgba(44, 62, 80,1.0)', 180, tick * 1);
+    drawCircle(73 * factor, 15 * factor, 'rgba(44, 62, 80,1.0)', 290, 30 + -(tick * 1.6));
+    drawCircle(48 * factor, 15 * factor, 'rgba(44, 62, 80,1.0)', 180, -(tick * 1.3));
+    drawCircle(68 * factor, 15 * factor, '#fff', 250, tick * 1.3);
+    drawCircle(44 * factor, 5 * factor, '#fff', 100, tick * 2);
+    drawCircle(62 * factor, 10 * factor, '#fff', 290, 30 + (tick * 1.8));
+    drawCircle(68 * factor, 5 * factor, '#fff', 320, 30 + tick * 1.3);
+    
+    canvas.font = '42px Orbitron';
+    canvas.fillStyle = '#fff';
+    var txt = canvas.measureText('Cleaning your system!');
+    canvas.fillText('Cleaning your system!', halfW - (txt.width / 2), halfH + 230);
+    
+    canvas.font = '13px Orbitron';
+    canvas.fillStyle = 'rgba(44, 62, 80,1.0)';
+    for (var i = 0; i < currentText.length; i += 1) { 
+        var txt = canvas.measureText(currentText[i]);
+        canvas.fillText(currentText[i], window.innerWidth - txt.width - 10, 25 + (i*25));
+    }
+    if (currentText.length > window.innerHeight / 25 / 2) {
+        currentText = [];
+    }
+    
+    requestAnimationFrame(render);
+};
+
+function drawCircle (radius, width, color, c, angle) {
+        var halfW = window.innerWidth / 2,
+    halfH = window.innerHeight / 2,
+    iH = window.innerHeight / 10,
+    iW = window.innerWidth / 10;
+    
+    var offset = Math.PI*angle/180
+    canvas.beginPath();
+    canvas.strokeStyle = color;
+    canvas.lineWidth = width;
+    canvas.arc(halfW, halfH, radius, offset, offset+Math.PI/180*c,true);
+    canvas.stroke();
+}
+
+render();
+
+   
+}
 
