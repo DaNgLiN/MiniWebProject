@@ -71,8 +71,8 @@
                 <i class="fas fa-chevron-circle-right " style="font-size:20px"></i></button>
 
         </div>
-        <div class="d-flex flex-column">
-            <div class="d-flex flex-column">
+        <div class="d-none"> <!-- <div class="d-flex flex-column"> -->
+           <div class="d-flex flex-column">
                 <div>Follow :</div>
                 <div id="side_menu_social_icons" class="w-100 h-100">
                     <i class="fab fa-facebook-f p-1" style="font-size:16px"></i>
@@ -87,6 +87,7 @@
                     <span style="font-size:12px">NepsGeek's, Nepal</span>
                 </div>
             </div>
+            
         </div>
     </div>
 
