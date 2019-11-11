@@ -253,15 +253,12 @@ background: #1AA85C;
                             <div id="outerContainer">
                                 <div id="container">
                                     <div class="item">
-<<<<<<< HEAD
-                                        <button class="btn text-light  rounded-circle btn-primary   "
-                                            style="width:150px;height:150px;font-size:50px;font-family:Milea;"
-                                            onclick="loaderWall()">GOo!</button>
-=======
+
                                         <button class="btn btn text-light  rounded-circle btn-primary   "
                                             style="width:150px;height:150px;font-size:50px;font-family:Milea"
                                             onclick="loaderWall()">GO!</button>
->>>>>>> DANGLIN
+
+
                                     </div>
 
                                     <div class="circle" style="animation-delay: 0s"></div>
@@ -775,7 +772,7 @@ background: #1AA85C;
                             <i class="fas fa-tachometer-alt fa-3x p-1"></i>
                             <h5 class="card-title">Improve Speeds</h5>
                             <p class="card-text">Explore steps you can take to improve your Internet speed.</p>
-<<<<<<< HEAD
+
                             <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#spped">
                                 Get Tips
@@ -816,10 +813,11 @@ background: #1AA85C;
                                     </div>
                                 </div>
                                 </div>
-=======
-                            <a href="#" class="btn btn-primary">Get Tips</a>
->>>>>>> DANGLIN
+
                         </div>
+
+       </div>
+
                     </div>
 
                     <div class="card m-1" style="width: 15rem;">
@@ -829,8 +827,8 @@ background: #1AA85C;
                             <i class="fas fa-trash fa-3x p-1"></i>
                             <h5 class="card-title">Disk Clean</h5>
                             <p class="card-text">Free up unnecessary spaces. Delete temporary files, unused programs.
+
                             </p>
-<<<<<<< HEAD
 
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary" data-toggle="modal" onclick="cleaningfunc()" data-target="#clean">
@@ -849,9 +847,7 @@ background: #1AA85C;
                             </div>
                             </div>
                             </div>
-=======
-                            <a href="#" class="btn btn-primary">Clean up</a>
->>>>>>> DANGLIN
+
                         </div>
                     </div>
 
@@ -863,7 +859,7 @@ background: #1AA85C;
                             <h5 class="card-title">Troubleshoot</h5>
                             <p class="card-text">See if there are any outages and restart your system to become problem
                                 free.</p>
-<<<<<<< HEAD
+
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#troublehot">
                             Check Outages
@@ -888,9 +884,7 @@ background: #1AA85C;
                                 </div>
                             </div>
                         </div>  
-=======
-                            <a href="#" class="btn btn-primary">Check Outages</a>
->>>>>>> DANGLIN
+
                         </div>
                     </div>
 
@@ -908,21 +902,13 @@ background: #1AA85C;
                         </div>
                     </div>
                     <div class="w-100 mt-5">
-<<<<<<< HEAD
+
                         <div class="alert alert-success p-5 w-100" style="box-shadow:0px 5px 10px 1px black">
                             <h1>All-in-One IT systems Monitoring!</h1>
                             <h3>Affordable. Powerful. Get Started in Minutes.</h3>
                             <button class="btn btn-success mt-5 w-50 text-bold" style="box-shadow:0px 2px 10px 1px black" data-toggle="modal" data-target="#exampleModalLong">
                                 Build your custom plan
-=======
-                        <div class="alert alert-success p-5 w-100" style="box-shadow:0px 5px 10px 1px grey">
-                            <h1 style="font-family: 'Satisfy', cursive;">All-in-One IT systems Monitoring!</h1>
-                            <h3 style="font-family: 'Satisfy', cursive;">Affordable. Powerful. Get Started in Minutes.
-                            </h3>
-                            <button class="btn btn-success btn-lg mt-5 w-50 font-weight-bold"
-                                style="box-shadow:0px 2px 10px 1px grey">
-                                Build Your Custom Plan
->>>>>>> DANGLIN
+
                             </button>
                             <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" style="background:rgba(0,0,0,0.8);">
                             <div class="modal-dialog " role="document" style="margin:50px;">
@@ -1136,7 +1122,7 @@ background: #1AA85C;
 </div>
 </div>
 
-<<<<<<< HEAD
+
 <script>
 
 function clearthis(){
@@ -1276,7 +1262,6 @@ function drawCircle (radius, width, color, c, angle) {
 render();
 
    
-}
+
 </script>
-=======
->>>>>>> DANGLIN
+
