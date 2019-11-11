@@ -16,10 +16,9 @@ $(document).ready(function () {
 function loaderWall() {
     document.getElementById("_loader_wall").style.display = "block";
     setTimeout(function () {
-
-        window.replace("http://localhost/project%20v2.0/pages/Inside%20GO/")
-    }, Math.floor(Math.random() * 3000) + 1000)
-
+        location.replace("http://localhost/final/pages/main.php");
+       
+    }, Math.floor(Math.random() * 10000) + 5000)
 
 }
 
