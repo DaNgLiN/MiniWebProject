@@ -10,23 +10,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" type="text/css" href="css/loading-bar.css">
+
 
     <style>
     *::-webkit-scrollbar {
-        width: 10px;
-        background-color: black;
-    }
-
-    *::-webkit-scrollbar-thumb {
-        background-color: white;
-    }
-
-    *::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
-        background-color: transparent;
-    }
-
+    width: 10px;
+    background-color:black;
+} 
+*::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+    background-color: transparent;
+}
     * {
         box-sizing: border-box;
     }
@@ -136,7 +133,7 @@
         theme_text_color = document.getElementsByClassName('theme_text_color')
         for (i = 0; i < theme_text_color.length; i++) {
             theme_text_color[i].style.color = text_color
-            theme_text_color[i].setAttribute('style', '.theme_text_color: hover{border:1px solid}')
+            theme_text_color[i].setAttribute('style','.theme_text_color: hover{border:1px solid}')
             //  theme_text_color[i].style.transition = transition_t + 's'
         }
         menuListItems = document.getElementsByClassName('menuListItems')
@@ -206,6 +203,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
     function sideMenuOver(a) {
         //  a.style.backgroundColor = h_bg_color
     }
@@ -239,7 +246,6 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
-    <script src="scripts/loading-bar.js"></script>
 </body>
 
 </html>
